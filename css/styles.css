@@ -41,13 +41,11 @@ img{
 
 body{
     font-family: Montserrat, sans-serif ;
-}
-
-/* HEADER */
-.page-header{
     max-width: 940px;
     margin: 0 auto;
 }
+
+/* HEADER */
 
 .logo-link{
     text-decoration: none;
@@ -59,7 +57,11 @@ body{
 
 .page-nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 105px;
 }
 
 .menu-list{
@@ -83,3 +85,105 @@ body{
     color: #fed136;
 }
 
+
+/* Section SERVICES */
+.services-section{
+    min-height: 575px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-title-dark{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 75px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.subtitle{
+    font-family: "Droid Serif Italic", serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #777777;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.services-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.services-item{
+    position: relative;
+    flex-basis: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.services-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 0 ;
+    color: #222;
+}
+
+.services-text{
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #777777;
+    text-align: center;
+    margin: 0;
+}
+
+.services-item div{
+    position: relative;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    width: 68px;
+    align-self: center;
+    height: 67px;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.circle::before{
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.basket::before{
+    width: 40px;
+    height: 39px;
+    background-image: url("/img/Icon-Basket.png");
+}
+
+.laptop::before{
+    width: 41px;
+    height: 34px;
+    background-image: url(/img/Icon-Laptop.png);
+}
+
+.lock::before{
+    width: 29px;
+    height: 40px;
+    background-image: url(/img/Icon-Locked.png);
+}
