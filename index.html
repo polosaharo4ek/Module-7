@@ -66,11 +66,12 @@
         <section class="contact-section">
             <h3 class="section-title-light">Contact us</h3>
             <p class="subtitle">Proin iaculis purus consequat sem cure. </p>
-            <form action="#" class="contact-form">
-                <input type="text" name="user-name" required autofocus placeholder="Your name">
-                <input type="email" name="user-email" required placeholder="Your email">
+            <div class="map"></div>
+            <form action="#" class="contact-form" method="GET">
+                <input type="text" name="user-name" required autofocus placeholder="Your name*">
+                <input type="email" name="user-email" required placeholder="Your email*">
                 <input type="text" name="subject" placeholder="Subject">
-                <textarea name="contact-textarea" id="" cols="30" rows="10"></textarea>
+                <textarea name="contact-textarea" id="" cols="30" rows="10" required placeholder="Your massage*"></textarea>
                 <button class="submit-button">Send message</button>
             </form>
         </section>

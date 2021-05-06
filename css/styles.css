@@ -41,7 +41,7 @@ img{
 
 body{
     font-family: Montserrat, sans-serif ;
-    max-width: 940px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -61,7 +61,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 105px;
+    padding: 0 230px;
 }
 
 .menu-list{
@@ -92,6 +92,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0 230px;
 }
 
 .section-title-dark{
@@ -110,6 +111,7 @@ body{
     color: #777777;
     margin: 0 auto;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .services-list{
@@ -186,4 +188,107 @@ body{
     width: 29px;
     height: 40px;
     background-image: url(/img/Icon-Locked.png);
+}
+
+/*Section FOrm */
+
+.contact-section{
+    padding-top: 100px;
+    min-height: 677px;
+    background-color: #222222;
+    position: relative;
+}
+
+.section-title-light{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding: 0;
+    color:#ffffff;
+    text-align: center;
+}
+
+.map{
+    width: 614px;
+    height: 537px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(/img/MapImage.png);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.contact-form{
+    margin-top: 50px;
+    position: relative;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 27px 230px 0;
+}
+
+input{
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    margin-bottom: 27px;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+
+::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+textarea{
+    width: 454px;
+    height: 208px;
+    padding:15px  20px;
+    border-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: none;
+}
+
+.submit-button{
+    width: 240px;
+    height: 65px;
+    border: none;
+    background-color: #fed136;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.submit-button:hover{
+    filter: drop-shadow( 0 0 7px #fccb45);
+}
+
+input:focus:valid{
+    outline:2px solid rgb(85, 206, 48);
+}
+
+input:focus:invalid{
+    outline:2px solid orangered;
 }
